@@ -7,17 +7,18 @@ function App() {
     <main>
       <div className="container">
         <h3>FAQ</h3>
+
         <section className="info">
           {data.map((question) => {
             return (
               <SingleQuestion
                 title={question.title}
                 info={question.info}
-                key={question.id}
-              />
+                key={question.id} />
             )
           })}
         </section>
+        
       </div>
     </main>
   )
